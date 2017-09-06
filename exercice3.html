@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+	<script type="text/javascript">
+	
+
+function Resolution() {
+
+	var a=parseInt(document.form1.a.value);
+	var b=parseInt(document.form1.b.value);
+
+ if(a!=0 && b!=0)
+ {
+document.form1.x.value=-b/a;}
+else if (b==0)
+document.form1.x.value=0;
+else
+alert("impossible");
+}
+	</script>
+</head>
+<body>
+<form name="form1">
+<table border="0">
+	<tr>
+	<td>
+		a:
+	</td>
+	<td>
+		<input type="number" name="a">
+	</td>
+	<td>
+		b:
+	</td>
+	<td>
+		<input type="number" name="b"> 
+	</td>
+	</tr>
+
+	<tr>
+	
+	<td>
+	<input type="button" name="sb1" value="Resolution" onclick="Resolution()">
+	</td>
+	</tr>
+<tr>
+	<td>
+		x
+	</td>
+	<td>
+		<input type="number" name="x">
+	</td>
+	</tr>
+	<tr>
+	<td>
+		effacer
+	</td>
+	<td>
+		<input type="reset" value="effacer">
+	</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

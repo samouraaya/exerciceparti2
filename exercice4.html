@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex4</title>
+	<script type="text/javascript">
+		function changer() {
+			var colorF=document.co.c.value;
+			var colorB=document.co.a.value;
+			
+			document.body.style.backgroundColor =colorB;
+			document.getElementById("zone1").style.color=colorF;
+		document.getElementById("zone2").style.color=colorF;
+				
+		}
+	</script>
+
+</head>
+<body>
+<form name="co">
+<table><tr><td id="zone1">couleur de fond</td>
+<td><input type="color" name="c" onChange="changer()"></td>
+</tr>
+<tr><td id="zone2">ouleur arriere plan</td>
+<td><input type="color" name="a"  onChange="changer()"></td></tr>
+<tr>
+		<td><INPUT type="button" name="nom" value= "resolution" ></td>
+		<td><INPUT type="reset" name="nom" value= "retablir"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
