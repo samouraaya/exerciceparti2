@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+	function test() {
+		var motpass=document.form1.psw.value;
+		if (motpass=="mot")
+			
+			alert("votre mot de passe est correcte")
+			
+		else
+			alert("votre mot de passe n'est pas correcte")
+	}
+
+	</script>
+</head>
+<body>
+<form name="form1" action="couleur.html">
+<table border="0">
+	<tr>
+	<td>
+	saisir votre nom
+	</td>
+	<td>
+		<input type="text" name="nb1">
+	</td>
+	</tr>
+
+	<tr>
+	<td>
+	saisir votre mot de passe
+	</td>
+	<td>
+		<input type="password" name="psw">
+	</td>
+	</tr>
+
+
+	<tr>
+	<td>
+		<input type="button" name="bt1" value="Soumettre" onclick="test()">
+	</td>
+	
+	</tr>
+
+	
+</table>
+</form>
+
+</body>
+</html>
